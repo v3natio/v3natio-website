@@ -1,0 +1,8 @@
+baseURL = 'https://v3natio.github.io/'
+languageCode = 'en-us'
+title = 'my blog'
+theme = "PaperMod"
+canonifyURLs = true
+
+[params]
+author = "v3natio"
