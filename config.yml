@@ -1,0 +1,80 @@
+title: "venatio"
+baseURL: "https://v3natio.github.io/"
+theme: "PaperMod"
+languageCode: "en-us"
+
+params:
+  env: "production"
+  title: "venatio"
+  description: "Economics student at UC3M. Welcome to my website!" # shown on web preview
+  keywords: [Augusto Zerpa, Blog, Portfolio, Economics, Mathematics, CS, Linux, Arch Linux]
+  author: "venatio"
+  images: ["logo_alt.png"] # shown on web preview
+  defaultTheme: "auto"
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowSocialIcons: true
+  TocOpen: true
+  TocSide: "left"
+  math: true
+  comments: true
+  ShowAllPagesInArchive: true
+
+  mainSections:
+    - posts
+    - projects
+
+  assets:
+    disableHLJS: true
+    customCSS:
+      - "css/extended/custom.css"
+
+  logo:
+    icon: "/img/logo_alt.png"
+    iconHeight: 35
+
+  profileMode:
+    enabled: true
+    title: venatio
+    subtitle: "Econometrics student with a knack for quantitative finance. More about me."
+    imageUrl: "/logo_alt.png"
+    imageWidth: 150
+    imageHeight: 150
+    buttons:
+      - name: Posts
+        url: /posts
+      - name: Tags
+        url: /tags
+      - name: Archives
+        url: /archives
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/v3natio"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/augustoz/"
+    - name: rss
+      url: "index.xml"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: about
+      name: "About"
+      url: "/about/"
+      weight: 1
+    - identifier: projects
+      name: "Projects"
+      url: "/projects/"
+      weight: 2
+    - identifier: search
+      name: "Search"
+      url: "/search/"
+      weight: 3
