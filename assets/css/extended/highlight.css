@@ -1,0 +1,53 @@
+/* transition timing */
+:root { --hover-transition: color 0.2s ease, box-shadow 0.2s ease; }
+
+/* set smooth transition and hover color */
+a { transition: var(--hover-transition); }
+a:is(:hover, :focus-visible) { color: var(--link-hover-color) !important; }
+
+/* set active/current nav item */
+:is(#menu, .menu__inner--mobile)
+  :is(li.active > a, li.focus > a, a.active, a[aria-current]) {
+  color: var(--link-hover-color) !important;
+  text-shadow: none !important;
+  filter: none !important;
+  text-decoration: none !important;
+  box-shadow: var(--link-hover-underline-shadow) !important;
+}
+
+/* set profile underline */
+.profile .profile_inner span a {
+  display: inline !important;
+  text-decoration: none;
+  box-shadow: var(--link-underline-shadow);
+}
+
+/* remove archive underline */
+.archive-entry :is(.post-title, .archive-entry-title, .entry-title, h3, h2),
+.archive-entry :is(.post-title a, .archive-entry-title a, .entry-title a, h3 a, h2 a) {
+  display: inline !important;
+  text-decoration: none;
+  box-shadow: none !important;
+  transition: var(--hover-transition); /* needed for non-anchors */
+}
+
+/* remove underline from archive overlay links and post tags */
+:is(
+  .archive :is(.entry-link, .archive-entry > a:first-child, .archive-entry > a.overlay),
+  .post-tags a
+) {
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+/* set profile hover color + underline */
+.profile .profile_inner span a:is(:hover, :focus-visible) {
+  color: var(--link-hover-color) !important;
+  box-shadow: var(--link-hover-underline-shadow);
+}
+
+/* set archive row hover color (no underline) */
+.archive-entry:is(:hover, :focus-within)
+  :is(.post-title, .archive-entry-title, .entry-title, h3, h2, .post-title a, .archive-entry-title a, .entry-title a, h3 a, h2 a) {
+  color: var(--link-hover-color) !important;
+}

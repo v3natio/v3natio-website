@@ -6,10 +6,10 @@ languageCode: "en-us"
 params:
   env: "production"
   title: "venatio"
-  description: "Economics student at UC3M. Welcome to my website!" # shown on web preview
+  description: "Econometrics student at UC3M. Welcome to my website!" # shown on web preview
   keywords: [Augusto Zerpa, Blog, Portfolio, Economics, Mathematics, CS, Linux, Arch Linux]
   author: "venatio"
-  images: ["logo_alt_out.png"] # shown on web preview
+  images: ["/img/logo_out.png"] # shown on web preview
   defaultTheme: "auto"
   ShowReadingTime: true
   ShowPostNavLinks: true
@@ -27,7 +27,7 @@ params:
     - projects
 
   assets:
-    disableHLJS: true
+    disableHLJS: true # use Hugo's chroma
 
   logo:
     icon: "/img/logo_out.png"
@@ -35,9 +35,8 @@ params:
 
   profileMode:
     enabled: true
-    title: venatio
-    subtitle: "Econometrics student with a knack for quantitative finance. <a href=\"/about\"><ins>More about me</ins></a>"
-    imageUrl: "/logo_out.png"
+    subtitle: "Econometrics student with a knack for quantitative finance. <a href=\"/about\">More about me</a>."
+    imageUrl: "/img/logo_out.png"
     imageWidth: 150
     imageHeight: 150
     buttons:
@@ -60,12 +59,15 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
 
 outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+  home: ["HTML", "RSS", "JSON"]
+  section: ["HTML"]
 
 menu:
   main:
@@ -81,3 +83,7 @@ menu:
       name: "Search"
       url: "/search/"
       weight: 3
+
+enableRobotsTXT: true
+sitemap:
+  changefreq: weekly

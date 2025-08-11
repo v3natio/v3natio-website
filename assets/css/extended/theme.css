@@ -9,7 +9,7 @@
   --content: var(--primary);
   --code-bg: var(--tertiary-bg);
   --border: #f9f5d7;
-  --link-background-color: #83a598b3;
+  --link-background-color: #83a598b3; /* 0.6 transparency */
   --link-color: var(--primary);
   --link-hover-color: #458588;
   --link-underline-shadow: 0 1px 0 var(--link-color);
@@ -30,7 +30,7 @@
   --content: var(--primary);
   --code-bg: var(--tertiary-bg);
   --border: #1d2021;
-  --link-background-color: #076678b3;
+  --link-background-color: #076678b3; /* 0.6 transparency */
   --link-color: var(--primary);
   --link-hover-color: #458588;
   --link-underline-shadow: 0 1px 0 var(--link-color);
