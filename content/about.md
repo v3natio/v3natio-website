@@ -3,7 +3,6 @@ title: "About me"
 date: 2025-07-30
 draft: false
 showToc: false
-layout: "about"
 ---
 
 {{< rawhtml >}}
