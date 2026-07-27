@@ -4,7 +4,7 @@ date: 2025-07-30
 draft: false
 summary: "Various research and trading algorithms of our duo-team \"Robinson[-Crusoe]\" for IMC's Prosperity 3 trading competition."
 cover:
-  image: img/prosperity-imc-2025_alt.png
+  image: img/prosperity-imc-2025.png
   alt: "Image of IMC's Prosperity 3 island"
 tags: ["Python", "CS", "Statistics", "Market-Making"]
 ---

@@ -1,17 +1,48 @@
 ---
 title: "Introduction"
-date: 2025-09-03
-draft: false
+date: 2025-09-06
+draft: true
 summary: "foo"
 tags: ["Python", "CS", "Statistics", "Market-Making"]
 ---
 
-IMC Prosperity 3 (2025) was a global algorithmic trading competition that ran over five rounds and fifteen days, with 12,000+ teams participating worldwide. The challenge tasked teams with designing trading algorithms to maximize profits across a variety of simulated products — replicating real-world opportunities such as market making, statistical arbitrage, scalping, and locational arbitrage.
+Last month, our duo team Robinson\[-Crusoe\] participated in IMC's Prosperity 3 challenge, placing 200th among over 12,000 global teams (top ~2%) and 1st in Spain. Reading Prosperity 2 write-ups was invaluable in my preparation -- this series aims to pay it forward by sharing what I learned, round by round.
 
-The competition was gamified: each team represented an "island" trading fictional products like Kelp, Squid Ink, Picnic Baskets (an ETF analog), and Volcanic Rock Vouchers (an options analog), using SeaShells as the in-game currency. It started with just three products in Round 1 and progressively expanded to 15 products by the final round.
+## What is Prosperity 3?
 
-In each round, teams submitted an updated version of their trading algorithm, which was then independently evaluated against a marketplace of bot participants. Teams could study and optimize their algorithms by analyzing bot behaviors and interactions (e.g., predictable quoting or trading patterns) as well as statistical patterns in the price series themselves — both within a single product and across multiple related products (such as deviations between an ETF and its underlying constituents). The profit and loss (PnL) from this evaluation determined each team's standing relative to all others on the global leaderboard.
+Prosperity is a 15-day global challenge hosted by IMC Trading, designed to test participants' programming, analytical, and strategic thinking in a simulated trading environment.
 
-In addition to algorithmic trading, each round featured a manual trading challenge. Although these accounted for only a small fraction of total PnL, they were a fun aspect of the competition, often involving optimization under uncertainty, game-theoretic decision-making, or news-based trading tasks.
+The competition ran from April 7 to April 22 and included five trading rounds, each featuring both algorithmic and manual exercises reflecting real-world trading dynamics. Participants could compete either solo or in teams, with the highest-profit team earning the title of “IMC Global Trading Talent of the Year” along with a $25,000 USD cash prize, and additional awards for ranks 2–5 and “Best Manual Trader.” 
+IMC Trading
++1
 
-For full documentation on the algorithmic trading environment and more competition context, please refer to the Prosperity 3 Wiki.
+Core Structure of the Competition:
+
+Simulated Markets in a Gamified Setting
+Participants represent “islands” in a fantasy archipelago, trading using an in-game currency called SeaShells. The products—often whimsical in name—resemble real financial instruments and range across categories like ETFs and options. 
+stpaulsschool.org.uk
+IMC Trading
+
+Algorithmic Rounds
+Each of the five trading rounds required submission of a Python-based trading algorithm, evaluated in a simulated market populated by bots and other participants. Performance, measured by profit and loss (PnL), determined placement on the global leaderboard.
+
+Manual Trading Challenges
+Alongside algorithmic tasks, each round included a manual challenge—such as optimization puzzles, game theory scenarios, or news-driven decision-making. While these contributed modestly to overall PnL, they added variety and strategic depth.
+
+Support Resources
+Competitors gained access to a centralized Wiki and Discord server, which provided documentation, community collaboration, and insights—making these two resources invaluable for preparation and execution. 
+IMC Trading
+
+Why This Series Matters
+
+Your team and mine both benefited from previous Prosperity write-ups—we want to offer a clear, technical framework for future competitors by laying out:
+
+How the challenge was structured
+
+Our approaches to algorithmic and manual rounds
+
+Lessons learned that generalize beyond Prosperity 3
+
+What’s Next
+
+This introductory post provides the necessary context. The blog series will continue with detailed, per-round posts (Rounds 1–5), followed by a concluding reflection where we’ll distill broader lessons. The goal is to create a practical reference that equips others to perform confidently and creatively—just as past write-ups did for us.

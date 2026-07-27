@@ -2,6 +2,5 @@
 title: "Projects"
 cascade:
   showToc: false
+  showLastmod: false
 ---
-
-Miscellaneous side projects; under development.

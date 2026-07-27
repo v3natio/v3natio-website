@@ -1,18 +1,20 @@
-title: "venatio"
+title: "Augusto"
 baseURL: "https://v3natio.github.io/"
 theme:
   - "PaperModX"
-  - "hugo-cite"
-languageCode: "en-us"
+locale: "en-us"
 
 params:
   env: "production"
-  title: "venatio"
-  description: "Econometrics student at UC3M. Welcome to my website!" # shown on web preview
-  keywords: [Augusto Zerpa, Blog, Portfolio, Economics, Mathematics, CS, Linux, Arch Linux]
+  title: "Augusto"
+  #description: "Data Science Intern at ING. I post some educational content about math and CS on my website. I also describe the projects I've worked on." # shown on web preview
+  description: "Econometrics student at UC3M. I post some educational content about math and CS on my website. I also describe the projects I've worked on." # shown on web preview
+  keywords: [Augusto Zerpa, venatio, uc3m, computer science, cs, python, py, machine learning, ml, artificial intelligence, ai, linux, unix, arch linux, arch, mathematics, math, economics, econometrics, econ, blog, portfolio]
   author: "venatio"
-  images: ["/img/logo_out.png"] # shown on web preview
+  images: ["/img/logo_out.png"] # web preview
   defaultTheme: "auto"
+  DateFormat: "January 2, 2006"
+  LastModFormat: "January 2, 2006"
   ShowReadingTime: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
@@ -33,13 +35,14 @@ params:
     disableHLJS: true # use Hugo's chroma
 
   logo:
-    icon: "/img/logo_out.png"
+    icon: "/img/logo_out.png" # top left corner
     iconHeight: 35
 
   profileMode:
     enabled: true
-    subtitle: "Econometrics student with a knack for quantitative finance. <a href=\"/about\">More about me</a>."
-    imageUrl: "/img/logo_out.png"
+    subtitle: "Econometrics BSc student at <a href=\"https://uc3m.es/\">UC3M</a>.<br><a href=\"/about\">More about me</a>."
+    #subtitle: "Data Science Intern at <a href=\"https://ing.com/\">ING</a>, and Econometrics BSc student at <a href=\"https://uc3m.es/\">UC3M</a>. <br> <a href=\"/about\">More about me</a>."
+    imageUrl: "/img/me.jpg" # center
     imageWidth: 150
     imageHeight: 150
     buttons:
@@ -78,16 +81,21 @@ menu:
       name: "About"
       url: "/about/"
       weight: 1
+    - identifier: posts
+      name: "Posts"
+      url: "/posts/"
+      weight: 2
     - identifier: projects
       name: "Projects"
       url: "/projects/"
-      weight: 2
+      weight: 3
     - identifier: search
       name: "Search"
       url: "/search/"
-      weight: 3
+      weight: 4
 
 enableRobotsTXT: true
+enableGitInfo: true # for lastmod date
 
 sitemap:
   changefreq: weekly
