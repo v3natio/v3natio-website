@@ -7,8 +7,7 @@ locale: "en-us"
 params:
   env: "production"
   title: "Augusto"
-  #description: "Data Science Intern at ING. I post some educational content about math and CS on my website. I also describe the projects I've worked on." # shown on web preview
-  description: "Econometrics student at UC3M. I post some educational content about math and CS on my website. I also describe the projects I've worked on." # shown on web preview
+  description: "Data Science Intern at ING. I post some educational content about math and CS on my website. I also describe the projects I've worked on." # shown on web preview
   keywords: [Augusto Zerpa, venatio, uc3m, computer science, cs, python, py, machine learning, ml, artificial intelligence, ai, linux, unix, arch linux, arch, mathematics, math, economics, econometrics, econ, blog, portfolio]
   author: "venatio"
   images: ["/img/logo_out.png"] # web preview
@@ -40,8 +39,7 @@ params:
 
   profileMode:
     enabled: true
-    subtitle: "Econometrics BSc student at <a href=\"https://uc3m.es/\">UC3M</a>.<br><a href=\"/about\">More about me</a>."
-    #subtitle: "Data Science Intern at <a href=\"https://ing.com/\">ING</a>, and Econometrics BSc student at <a href=\"https://uc3m.es/\">UC3M</a>. <br> <a href=\"/about\">More about me</a>."
+    subtitle: "Data Science Intern at <a href=\"https://ing.com/\">ING</a>, and Econometrics BSc student at <a href=\"https://uc3m.es/\">UC3M</a>. <br> <a href=\"/about\">More about me</a>."
     imageUrl: "/img/me.jpg" # center
     imageWidth: 150
     imageHeight: 150
@@ -54,6 +52,8 @@ params:
         url: /archives
 
   socialIcons:
+    - name: cv
+      url: "https://www.linkedin.com/in/augustoz/"
     - name: github
       url: "https://github.com/v3natio"
     - name: linkedin

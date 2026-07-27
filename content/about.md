@@ -11,7 +11,7 @@ showToc: false
 <p align="center">Hi! I'm Augusto Zerpa.</p>
 {{< /rawhtml >}}
 
-I'm currently collaborating on the research and deployment of machine learning models, developing ETL data pipelines, and designing AI-driven workflows to streamline internal processes. My academic interests lie at the intersection of data science, finance, and economic modeling.
+I'm currently collaborating on the research and implementation of machine learning models, developing ETL data pipelines, and designing AI-driven workflows to streamline internal processes. My academic interests lie at the intersection of data science, finance, and economic modeling.
 
 Previously, I worked on the sell-side in Fixed Income & Structured Credit, where I went from building Excel tools and conducting credit analysis, to developing portfolio visualization systems using Python, VBA, and Bloomberg. I've also authored market research and collaborated closely with brokers on portfolio construction.
 
